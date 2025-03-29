@@ -548,6 +548,7 @@ body::-webkit-scrollbar-track {
     margin: auto;
     padding: 20px;
     text-align: center;
+    padding-bottom: 80px;
 }
 
 .featured-title {
@@ -608,6 +609,7 @@ body::-webkit-scrollbar-track {
     padding: 20px;
     text-align: center;
     background-color: #000000;
+    padding-bottom: 80px;
 }
 
 .how-start-title {
@@ -661,24 +663,11 @@ body::-webkit-scrollbar-track {
     }
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
 .why-us-games {
     margin: auto;
     padding: 20px;
     text-align: center;
-    background-color: #000000;
+    padding-bottom: 80px;
 }
 
 .why-us-title {
@@ -738,6 +727,235 @@ body::-webkit-scrollbar-track {
     }
 }
 
+.important-announcement-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    margin: 0 auto;
+    padding-bottom: 80px;
+}
+
+.announcement-card {
+    background-color: #000000;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: 90%;
+    max-width: 1000px;
+    position: relative;
+}
+
+.age-restriction-circle {
+    background-color: red;
+    color: white;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: -25px;
+    right: -25px;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.announcement-title {
+    font-size: 1.5em;
+    margin-top: 40px; /* Отступ для заголовка */
+}
+
+.announcement-description {
+    font-size: 1em;
+    margin-top: 10px;
+}
+
+@media (max-width: 600px) {
+    .announcement-card {
+        width: 95%;
+        padding: 15px;
+    }
+
+    .age-restriction-circle {
+        width: 40px;
+        height: 40px;
+        font-size: 16px;
+    }
+
+    .announcement-title {
+        font-size: 1.2em;
+    }
+
+    .announcement-description {
+        font-size: 0.9em;
+    }
+}
+
+.map-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px 20px;
+    background-color: #000000; /* Светлый фон для секции */
+    border-top: 5px solid #ff4a4a; /* Красная верхняя граница */
+    border-bottom: 5px solid #ff4a4a; /* Красная верхняя граница */
+}
+
+.map-container {
+    width: 100%;
+    max-width: 800px; /* Максимальная ширина контейнера */
+    border-radius: 15px; /* Закругленные углы */
+    overflow: hidden; /* Обертка для скрытия переполнения */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); /* Тень */
+}
+
+.map-frame {
+    width: 100%; /* Адаптивная ширина */
+    height: 450px; /* Высота карты */
+    border: 0; /* Убрать рамку */
+    transition: transform 0.3s; /* Плавный переход для изменения стиля */
+}
+
+.map-frame:hover {
+    transform: scale(1.05); /* Увеличение при наведении */
+}
+
+@media (max-width: 600px) {
+    .map-frame {
+        height: 300px; /* Высота для мобильных устройств */
+    }
+    
+    .map-section {
+        padding: 20px 10px; /* Меньшие отступы для мобильных */
+    }
+}
+
+.hero-contact-section {
+    margin-top: -50px;
+    position: relative;
+    height: 600px;
+    width: 100%;
+    background: rgb(15,104,115);
+    background: linear-gradient(90deg, rgba(15,104,115,1) 0%, rgba(0,0,0,1) 66%, rgba(27,102,101,1) 100%);
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero-contact-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+}
+
+.hero-contact-title {
+    font-size: 2.5em;
+    margin-bottom: 10px;
+    padding: 10px;
+}
+
+.hero-contact-subtitle {
+    font-size: 1.5em;
+    margin-bottom: 20px;
+    padding: 10px;
+    margin: 0;
+}
+
+@media (max-width: 768px) {
+    .hero-contact-title {
+        font-size: 2em;
+    }
+
+    .hero-contact-subtitle {
+        font-size: 1.2em;
+    }
+}
+.footer-18only {
+    color: #ff4a4a;
+}
+.contact-start-games {
+    margin: auto;
+    padding: 20px;
+    text-align: center;
+    padding-bottom: 80px;
+}
+
+.contact-start-title {
+    font-size: 2em;
+    color: #ffffff;
+    margin-bottom: 10px;
+}
+
+.contact-start-description {
+    font-size: 1.2em;
+    color: #ffffff;
+    margin-bottom: 30px;
+}
+
+.contact-start-games-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.contact-start-game-card {
+    background-color: #000000;
+    border-radius: 8px;
+    width: 30%; /* 30% for large screens */
+    margin: 10px;
+    padding: 15px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+}
+
+.contact-start-game-icon {
+    font-size: 52px;
+    color: #00e1ff;
+}
+
+.contact-start-game-title {
+    font-size: 1.5em;
+    color: #ffffff;
+    margin: 10px 0;
+}
+
+.contact-start-game-description {
+    font-size: 1em;
+    color: #ffffff;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .contact-start-game-card {
+        width: 90%; /* Full width on small screens */
+        margin: 10px auto; /* Center the cards */
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -772,6 +990,9 @@ body::-webkit-scrollbar-track {
         transform: scale(1.05); /* Add a hover effect */
     }
     .how-start-game-card:hover {
+        transform: scale(1.05); /* Add a hover effect */
+    }
+    .contact-start-game-card:hover {
         transform: scale(1.05); /* Add a hover effect */
     }
     .why-us-game-card:hover {
